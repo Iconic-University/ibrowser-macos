@@ -14,3 +14,5 @@ This is a public Safe Exam Browser fork. Read the upstream README and your assig
 - Handoff includes task ID, full commit/PR, changed behavior/paths, exact commands and results, toolchain, source/notice implications, skipped checks, risks and next owner/dependency. Keep diagnostics redacted.
 
 macOS baseline candidate is 3.7.2. The public tree omits proprietary security modules and Zoom components; Apple assessment entitlement and signing identities require separate evidence. Never remove security code as a production workaround. Official-client integration remains the default until custom parity/rights/device gates pass.
+
+Review process: the sole human maintainer uses two distinct agents, one for technical review and one to approve after checking findings, fixes, tests and gate evidence. Record both decisions before merge. They share a GitHub identity; independent human/GitHub approval is not required. Required security, hardware, rights and release gates cannot be waived by agent approval.
